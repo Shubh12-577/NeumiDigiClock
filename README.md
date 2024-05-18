@@ -1,7 +1,9 @@
 # NeumiDigiClock
 Neumorphism Design Digital Clock
 
-    The Neumorphism Design Digital Clock is a visually appealing clock application that uses the neumorphism design trend. Neumorphism, or soft UI, is a design approach that combines background colors, shapes, gradients, and shadows to create a soft, extruded plastic look, often seen in modern interfaces.
+    The Neumorphism Design Digital Clock is a visually appealing clock application that uses the neumorphism design trend. 
+    Neumorphism, or soft UI, is a design approach that combines background colors, shapes, gradients,
+    and shadows to create a soft, extruded plastic look, often seen in modern interfaces.
 
 Features
     1. Displays current time in a digital format (HH:MM:SS).
