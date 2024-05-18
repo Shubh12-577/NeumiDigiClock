@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,user-scalable=no"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,600;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Neumorphism Digital Clock</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="display">
+        <div data-format="12" id="time">13:00:00</div>
+      </div>
+      <div class="format">
+        <span data-format="12" class="Hour12">12-Hour</span>
+        <input type="button" value="Light" class="Mode" />
+        <span data-format="24" class="Hour24">24-Hour</span>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

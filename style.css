@@ -1,0 +1,125 @@
+:root {
+  --txt-clr: #272341;
+  --txt-fcs: #3498db;
+  --back-clr: #e5e5e5;
+  --boxShadow-out: -3px -3px 7px #ffffff73,
+    2px 2px 5px rgba(94, 104, 121, 0.288);
+  --boxShadow-in: inset -3px -3px 7px #ffffff73,
+    inset 2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  color: var(--txt-clr);
+  transition: background-color 400ms ease-out, color 300ms ease-in,
+    box-shadow 600ms ease-out;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--back-clr);
+}
+
+.wrapper {
+  display: grid;
+  place-items: center;
+  position: relative;
+  height: 210px;
+  width: 600px;
+  cursor: default;
+  border-radius: 10px;
+  box-shadow: var(--boxShadow-out);
+}
+
+.wrapper .display {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -15%);
+  height: 80px;
+  width: 400px;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: var(--boxShadow-in);
+}
+
+.wrapper .display #time {
+  font-size: 50px;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+.wrapper .format {
+  position: absolute;
+  top: 65%;
+}
+.wrapper .format span {
+  font-size: 14px;
+  font-weight: 600;
+  cursor: default;
+  border-radius: 4px;
+  padding: 0.4em 1em;
+}
+span:nth-of-type(1) {
+  box-shadow: var(--boxShadow-in);
+  color: var(--txt-fcs);
+}
+span:nth-of-type(2) {
+  box-shadow: var(--boxShadow-out);
+}
+.wrapper .format .Mode {
+  font-size: 0.9rem;
+  cursor: pointer;
+  color: var(--txt-clr);
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  padding: 0.5em 0.8em;
+  margin: 0 3em;
+  border-radius: 3px;
+  background-color: var(--back-clr);
+  font-weight: 800;
+  box-shadow: var(--boxShadow-out);
+  letter-spacing: 3px;
+}
+.wrapper .format .Mode:active {
+  box-shadow: var(--boxShadow-in);
+  color: var(--txt-fcs);
+}
+@media (max-width: 600px) {
+  .wrapper {
+    height: 40vw;
+    width: 90vw;
+  }
+  .wrapper .display {
+    height: 15vw;
+    width: 70vw;
+  }
+  .wrapper .display #time {
+    font-size: 9vw;
+    letter-spacing: 3px;
+  }
+  .wrapper .format {
+    top: 62%;
+  }
+  .wrapper .format span {
+    font-size: 3vw;
+    padding: 0.3em 0.65em;
+  }
+  .wrapper .format .Mode {
+    font-size: 3.1vw;
+    letter-spacing: 2px;
+    margin: 0 1.7em;
+  }
+}
