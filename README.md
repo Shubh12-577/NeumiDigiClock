@@ -25,7 +25,8 @@ Customization
         2. Shadows: Adjust the shadow properties to alter the depth and highlight effects.
         3. Font: Modify the font family, size, and weight to fit your preferred typography.
 
-This is in dark mode : -
+This is in light mode : -
+![image](https://github.com/Shubh12-577/NeumiDigiClock/assets/86088965/36283657-363c-4605-94b3-04e363566b1f)
 
-
 This is in dark mode : -
+![image](https://github.com/Shubh12-577/NeumiDigiClock/assets/86088965/9e081d80-c100-41bd-b8e5-a7e7daefc478)
